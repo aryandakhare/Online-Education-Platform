@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+display:none;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: #fffdf7;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #e0e4ea;
+    justify-content: space-between;
+    padding: 0vw 10vw;
+    position: fixed;
+    z-index: 99;
+}
+
+nav a {
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+.cntr-nav{
+    display: flex;
+    gap: 3vw;
+}
+
+nav i {
+    font-size: 1.5vw;
+}
+
+.one {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vw;
+    position: relative;
+}
+
+.left-text {
+    max-width: 50%;
+    z-index: 2;
+}
+
+.left-text h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #333;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    margin-top: 7vw; 
+    margin-bottom: 1.5vw;
+}
+
+.left-text p {
+    font-size: 1.2vw;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2vw;
+}
+
+.left-text button {
+    padding: 0.8vw 2vw;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.left-text button:hover {
+    background-color: #176ed3;
+}
+
+#girl {
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    margin-left: 4vw;
+    margin-top: -12vw;
+}
+
+#bulb {
+    width: 15%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: rotate(-35deg);
+    z-index: 1;
+}
+
+
+
+#crystal {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    right: 5%;
+    z-index: 0;
+    opacity: 0.2; 
+    transform: rotate(-6deg);
+}
+
+#image_2 {
+    position: absolute;
+    width: 20%;
+    top: 55%;
+    right: 32%;
+    z-index: 1;
+    opacity: 0.7; 
+    transform: rotate(-6deg);
+}
+
+.two {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #fffdf7;
+  padding: 0 8vw;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+/* SVG positioning */
+.lft-two {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 5vh;
+  padding-right: 2vw;
+}
+
+.lft-two svg {
+  width: 80%;
+  max-width: 500px;
+  transform: rotate(-10deg);
+  margin-top: 5vh;   /* Move down */
+  margin-left: -5vw; /* Move left */
+  opacity: 0.85;
+}
+
+/* Text container */
+.rght-two {
+  width: 50%;
+  padding-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Beautiful h1 with underline effect */
+.rght-two h1 {
+  font-size: 3vw;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.rght-two h1::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background: #8ec5fc;
+  bottom: -10px;
+  left: 0;
+  border-radius: 10px;
+}
+
+/* Stylish paragraph box */
+.rght-two p {
+  font-size: 1.2vw;
+  line-height: 1.8;
+  color: #444;
+  background: #f7faff;
+  padding: 1.5vw;
+  border-left: 5px solid #8ec5fc;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  max-width: 90%;
+  transition: all 0.3s ease;
+}
+
+.rght-two p:hover {
+  background-color: #eef7ff;
+}
+
+.two-buttons {
+  margin-top: 2vw;
+  display: flex;
+  gap: 1.5vw;
+}
+
+/* Base button style */
+.action-btn {
+  padding: 1vw 2.5vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #4a90e2;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect: move up + change color */
+.action-btn:hover {
+  transform: translateY(-6px);
+  background-color: #357ac9;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Secondary style button */
+.action-btn.secondary {
+  background-color: transparent;
+  border: 2px solid #4a90e2;
+  color: #4a90e2;
+}
+
+.action-btn.secondary:hover {
+  background-color: #4a90e2;
+  color: #fff;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.three {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 2vw;
+  padding: 5vh 10vw;
+  background-color: #fffdf7;
+  flex-wrap: wrap;
+}
+
+.courses-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 3vh;
+  color: #1b1b1b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+
+.card {
+  background: #f8faff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  padding: 2vw;
+  width: 28%;
+  min-width: 280px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  min-height: 500px; /* ✅ Add this */
+  box-sizing: border-box;
+}
+
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 80%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.2vw;
+}
+
+.image-placeholder {
+  width: 80%;
+  height: 180px;
+  border-radius: 12px;
+  margin-bottom: 1.2vw;
+  background-color: #f8faff; /* same as .card background */
+}
+
+
+
+.card h2 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 1vh;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 2vh;
+}
+
+.card button {
+  background-color: #0f62fe;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0041c2;
+  transform: translateY(-2px);
+}
